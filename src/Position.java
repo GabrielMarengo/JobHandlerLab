@@ -22,7 +22,9 @@ public class Position {
 		this.positionCode = positionCode;
 	}
 
-	public int getRank() {
+	public int getRank() {//Add Code Here [You have to use If/Else to get graded]
+		 //Temporal Return
+		
 		return reqRank;
 	}
 
@@ -67,9 +69,9 @@ public class Position {
 	 */
 	public double getYearlySalary() {
 		
-		//Add Code Here [You have to use If/Else to get graded]
-		
-		return 0; //Temporal Return
-		
+		if (jobType==false)
+			return hSalary*20*4.5*12;
+		else
+			return hSalary*40*4.5*12;
 	}
 }
